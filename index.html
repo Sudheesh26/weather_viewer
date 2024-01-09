@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Weather Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="blurred_section content display-1" onmouseover="applyBlur()" onmouseout="removeBlur()">
+
+        <h1 class="display-4 heading p-3 mb-0">Weather Viewer</h1>
+
+
+        <!-- <form onsubmit="weather_find(); return false" class="mx-auto form-group text-center row">
+            <div class="input-group input-group-lg mx-auto justify-content-end">
+
+                 <div class="col-xl-6 col-lg-8 col-8 mx-auto"> -->
+                <!-- <div class="col-10">
+                    <input type="text" class="bg-dark text-white form-control txt_inp" width="25"
+                        placeholder="Enter a City, Country">
+                </div>
+
+                <div class="col-2 d-flex justify-content-start mx-auto">
+                    <input class="btn btn-primary" type="submit" value="Search">
+                </div> 
+
+                <input type="text" class="form-control" id="cityInput" placeholder="Enter city">
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </div>
+
+
+        </form> -->
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <form onsubmit="weather_find(); return false" class="mx-auto"  style="max-width: 400px;">
+                  <div class="form-group">
+                    <label class="display-4" for="cityInput">Enter City</label>
+                    <input type="text" class="form-control" id="cityInput" placeholder="Enter city or Country">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+        <div id="weatherData"></div>
+
+    </div>
+
+
+
+
+
+
+    <!-- <div class="input input-group">
+        <input class="txt_inp" type="text" width="25" placeholder="Enter a City, Country">
+        <input class="btn btn-primary" type="submit" value="Search" onclick="weather_find()">
+    </div> -->
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

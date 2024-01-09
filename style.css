@@ -1,0 +1,138 @@
+body
+{
+    background-image: url(wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-size: larger;
+}
+/*  */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: #fff; /* Set text color to be visible against the video background */
+    padding: 20px;
+}
+
+
+/*  */
+
+    
+    @media (max-width: 767px) {
+        body {
+            font-size: 18px; /* Adjust the font size for mobile devices */
+        }
+
+        .txt_inp {
+            height: 40px; /* Adjust the height of the input field for mobile devices */
+        }
+        
+        .btn {
+            font-size: 16px; /* Adjust the font size of buttons for mobile devices */
+        }
+    }
+
+h1
+{
+    color: rgb(3, 245, 23);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.blurred_section{
+    position: relative;
+    padding: 0;
+    border-radius: 10px;
+    color: white;
+}
+
+.blurred_section:hover::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    z-index: -1;
+    border-radius: inherit;
+  
+}
+/* 
+form{
+    float: left;
+} */
+
+
+.heading
+{
+    margin-bottom: 7vh;
+    /* background-color: #606060FF; */
+    color: #D6ED17FF;
+}
+
+/* .input
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6.25rem 25rem 1.563rem 25rem; 
+    
+}
+
+.txt_inp
+{
+    text-align: center;
+    border-radius: 25px;
+    font-size: large;
+    padding: 2%;
+    border-color: #0373B3;
+    width: 18.75rem;
+    margin-left: 33%;
+}
+
+.txt_inp::placeholder
+{
+    font-size: large;
+    color: antiquewhite;
+    text-align: center;
+} */
+
+.btn
+{
+    /* margin-left: 20px; */
+    margin-left: 0;
+    height: 50px;
+    width: 90px;
+    border-radius: 25px;
+    background-color: darkkhaki;
+    border-color: transparent;
+}
+
+#weatherData
+{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    color: yellow;
+    margin-top: 7vh;
+}
